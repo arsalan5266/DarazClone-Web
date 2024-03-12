@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    /* padding: 0 10rem; */
+}
+
+header{
+    background-color: #f85606;
+    padding: 0 5rem;
+    height: 75px;
+}
+
+header nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.darazLogo{
+    width: 100px;
+    height: 40px;
+}
+
+.searchBar{
+    width: 400px;
+    height: 25px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    margin-right: 50px;
+    padding: 0 15px;
+    font-size: 15px;
+}
+
+.topNav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.topNav ul {
+    display: flex;
+
+}
+
+.topNav ul li{
+    list-style: none;
+    margin: 6px;
+}
+.topNav ul li a{
+    color: white;
+    text-decoration: none;
+    letter-spacing: 0px;
+    font-size: 14px;
+    font-size: 10px;
+}
+.topNav ul li a:hover{
+    color: rgb(214, 214, 214);
+}
+
+.topNav ul li a{
+
+}
+
+.rightElements{
+    display: flex;
+   
+}
+.rightElements a{
+  padding: 8px;
+  list-style: none;
+  color: aliceblue;
+  font-size: 12px;
+}
