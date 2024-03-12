@@ -15,6 +15,15 @@ header{
     padding: 0 5rem;
     height: 75px;
 }
+header div .btn{
+  height: 15px;
+  width: 75px;
+  border: none;
+  background-color:#AD3C04 ;
+  font-size: 8px;
+  color: white;
+}
+
 
 header nav{
     display: flex;
@@ -23,7 +32,7 @@ header nav{
 }
 
 .darazLogo{
-    width: 100px;
+    width: 120px;
     height: 40px;
 }
 
@@ -33,9 +42,9 @@ header nav{
     border-radius: 10px;
     outline: none;
     border: none;
-    margin-right: 50px;
+    margin-right: 45%;
     padding: 0 15px;
-    font-size: 15px;
+    font-size: 12px;
 }
 
 .topNav{
@@ -77,4 +86,10 @@ header nav{
   list-style: none;
   color: aliceblue;
   font-size: 12px;
+
 }
+.rightElements a i{
+display: inline;
+padding: 8px;
+}
+
