@@ -14,6 +14,7 @@ header{
     background-color: #f85606;
     padding: 0 5rem;
     height: 75px;
+    display: f;
 }
 header div .btn{
   height: 15px;
@@ -168,5 +169,51 @@ label {
 input[type="radio"]:checked + .slides {
     transform: translateX(-100%);
 }
+.bannr{
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  
+}
+.bannr img{
+  width: 140%;
+  margin-top: 2%;
+}
 
+.containerBx ul{
+  display: flex;
+  /* justify-content: space-between; */
+  margin-top: -15px;
+  padding: 0 5rem;
+  align-items: center;
+}
+.containerBx ul li{
+  list-style: none;
+  height: 25px;
+  padding: 0 10px;
+  font-size: 10px;
+  background-color: #FFE8DE;
+  width: 150px;
+  padding-top: 6px;
+  
+}
 
+.parent{
+  width: 10rem;
+  height: 20rem;
+  background-color: grey;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  row-gap: .3rem;
+}
+
+.child{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 9rem;
+ column-gap: .3rem;
+
+}
