@@ -361,7 +361,6 @@ justForYou.forEach(item => {
 });
 
 
-
 const products = document.querySelectorAll('.singleProducts');
 const loadMoreBtn = document.querySelector(".Load-more");
 
