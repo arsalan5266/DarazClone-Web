@@ -1,0 +1,438 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+    --primary-color: #f85606;
+    --grey-color1: rgb(236, 236, 236);
+    --grey-color2: rgb(207, 207, 207);
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* font-family: sans-serif; */
+}
+body{
+   
+    background-color: rgb(226, 226, 226);
+}
+.main{
+    max-width: 100%;
+}
+.main .mainheadrs{
+display: flex;
+align-items: center;
+width: 55rem;
+justify-content: space-between;
+margin-left: 19rem;
+}
+.mainheadrs section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+}
+.mainheadrs section a{
+    text-decoration: none;
+    color: rgb(100, 100, 211);
+}
+.container{
+    max-width: 55rem;
+    padding: 28px;
+    margin: 0 auto;
+    background-color: rgb(248, 243, 243);
+    height: 30rem;
+    margin-top: 1rem;
+   
+}
+
+.content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px 0;
+
+}
+.input-box{
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    padding-bottom: 15px;
+}
+.input-box label{
+    width: 95%;
+    color: #2f4f4f;
+    font-weight: bold;
+    margin: 5px 0;
+}
+.input-box input{
+    height: 40px;
+    width: 95%;
+    padding: 0 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+.input-box input :is(:focus :valid){
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 2);
+}
+.signupbtn{
+    height: 40px;
+    width: 95%;
+    padding: 0 10px;
+    border-radius: 5px;
+    outline: none;
+    margin-top: 1.5rem;
+    background-color: #f85606;
+    color: white;
+}
+/* .input-box button a{
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+} */
+.para{
+    font-size: 14px;   
+}
+.para a{
+    text-decoration: none;
+    color: rgb(100, 100, 211);
+}
+.birthday{
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    padding-bottom: 15px;
+}
+.birthday label{
+    width: 70%;
+    color: #2f4f4f;
+    font-weight: bold;
+    margin: 5px 0;
+}
+.birthday input{
+    height: 40px;
+    width: 50%;
+    padding: 0 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+.birthday div label{
+    width: 40%;
+    color: #2f4f4f;
+    font-weight: bold;
+    margin: 5px 0;
+}
+.birthday div{
+    margin-left: 14rem;
+    margin-top: -3.60rem;
+}
+.birthday div select{
+    height: 40px;
+    width: 90%;
+    padding: 0 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+.content .socialaps p{
+    font-size: 14px;
+    margin-left: 10px;
+}
+.content .socialaps{
+    margin-right: 4.5rem;
+}
+
+
+  /* header css */
+  header {
+    background-color: var(--primary-color);
+    padding: 0 10rem;
+    height: 120px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  
+}
+ .btn{
+  height: 30px;
+  width: 160px;
+  border: none;
+  background-color:#AD3C04 ;
+  font-size: 13px;
+  color: white;
+  border-radius: 0 0 6px 6px;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+
+.logoDiv {
+    margin-right: auto;
+}
+
+.darazLogo {
+    width: 150px;
+}
+
+.searchbarDiv {
+    flex-grow: 1;
+}
+
+
+.searchBar {
+    width: 95%;
+    height: 35px;
+    border-radius: 12px;
+    outline: none;
+    border: none;
+    margin: 0 15px;
+    padding: 0 15px;
+    font-size: 15px;
+    position: relative;
+}
+.searchbtn button{
+    width: 2.7rem;
+    height: 1.7rem;
+    margin-left: 35.5rem;
+    margin-top: -1.9rem;
+    position: absolute;
+    background-color: #fde6db;
+    color:#f77636 ;
+    border: none;
+    border-radius: .5rem;
+    cursor: pointer;
+}
+
+
+.rightElements {
+    display: flex;
+    margin-left: auto;
+    margin-left: 40px;
+}
+
+.rightElements a {
+    text-decoration: none;
+    color: white;
+    margin-left: 8px;
+}
+
+.rightElements a i {
+    margin-right: 8px;
+}
+
+.rightElements span {
+    padding: 10px 12px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.loginBtn {
+    /* border: 1px solid black; */
+    padding: 10px 12px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.loginBtn:hover,
+.signupBtn:hover,
+.cartBtn:hover,
+.languagebtn:hover
+{
+    background-color: rgba(63, 63, 63, 0.205);
+}
+
+.signupBtn {
+    /* border: 1px solid black; */
+    padding: 10px 12px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.languagebtn{
+    padding: 10px 12px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.languagebtn .fa-solid {
+    margin-left: .3rem;
+}
+
+.cartBtn {
+    /* border: 1px solid black; */
+    padding: 10px 12px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.topNav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: -.3rem;
+}
+
+.topNav ul {
+    display: flex;
+
+}
+
+.topNav ul li {
+    list-style: none;
+    margin: 6px;
+}
+
+.topNav ul li a {
+    color: white;
+    text-decoration: none;
+    letter-spacing: 0px;
+    font-size: 12px;
+    font-family: Roboto-Regular, 'Helvetica Neue', Helvetica, Tahoma, Arial, Sans-serif;
+}
+
+.topNav ul li a:hover {
+    color: var(--grey-color1)
+}
+
+/* footer */
+.main-list{
+    width: 100%;
+    /* background: #f5f5f5; */
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2.5rem;
+    padding: 4rem;
+}
+.heading{
+    color: #f85606;
+    font-size: 20px;
+  }
+  .main-list .headings{
+    color: #f85606;
+    margin-top: 1.5rem;
+    font-size: 20pxpx;
+  }
+.mainimg{
+    margin-left: -1.1rem;
+    margin-top: .5rem;
+    /* width: 2rem; */
+   
+  }
+.img12{
+    width: 6rem;
+}
+
+.All-lists ul li{
+  list-style: none;
+  text-decoration: none;
+  margin-top: 5px;
+
+}
+
+.All-lists li a{
+    text-decoration: none;
+    font-family: Roboto-Regular, 'Helvetica Neue', Helvetica, Tahoma, Arial, Sans-serif;
+    font-size: 14px;
+    color: black;
+}
+
+.imagess {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 15rem;
+    column-gap:10px;
+    row-gap: 10px;
+    margin-top: .5rem;
+    margin-left: -.5rem;
+
+   
+}
+.imagess a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+
+}
+.imagess a img{
+    width: 2.5rem;
+    height:2.5rem;
+    padding: 3px;   
+}
+.executives{
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    flex-wrap: 1;
+    /* flex-wrap: wrap; */
+    width: 6rem;
+   
+}
+.executives img{
+    width: 6rem;
+    margin-top: .8rem;
+    margin-left: -1rem;
+}
+.deals {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 6rem;
+    flex-wrap:wrap ;
+    margin-left: 6.5rem;
+    margin-top: -6rem;
+}
+
+.deals img{
+    width: 6rem;
+    margin-left: -1rem;
+}
+.downldapp{
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    margin-top: 1.5rem;
+    margin-right: 4.5rem;
+    margin-left: -1rem;
+}
+.downldapp p{
+    margin-top: 2.5rem;
+    margin-left: -8rem;
+    font-size: 12px;
+    font-family: Roboto-Regular, 'Helvetica Neue', Helvetica, Tahoma, Arial, Sans-serif;
+}
+.smalimg{
+    width: 3rem;
+    margin-top: 1.4rem;
+    padding: 5px;   
+}
+.Folllow-us{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -1.6rem;
+    margin-top: .5rem;
+}
+
