@@ -446,3 +446,33 @@ function showSlides(n) {
 let slideTimer = setInterval(function() {
   nextSlide();
 }, 3000);
+
+
+
+
+// x axis scroll hidden
+
+document.body.style.overflowX = 'hidden';
+
+// TIMER
+const hour = document.querySelector(".hour")
+const minute = document.querySelector(".minute")
+const second = document.querySelector(".second")
+const targetTime = new Date()
+targetTime.setHours(targetTime.getHours()+2)
+
+function updateTime(){
+  const currentTime = new Date()
+  const timeDifference = targetTime - currentTime
+
+  const hours = Math.floor(timeDifference /(1000 * 60 * 60))
+  const minutes = Math.floor((timeDifference %(1000 * 60 * 60))/(1000 * 60));
+  const seconds = Math.floor((timeDifference %(1000 * 60))/1000);
+
+  hour.textContent = hours.toString().padStart(2,"0");
+  minute.textContent = minutes.toString().padStart(2,"0");
+  second.textContent = seconds.toString().padStart(2,"0");
+}
+updateTime();
+
+setInterval(updateTime,1000);

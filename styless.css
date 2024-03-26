@@ -39,7 +39,7 @@ margin-left: 19rem;
     max-width: 55rem;
     padding: 28px;
     margin: 0 auto;
-    background-color: rgb(248, 243, 243);
+    background-color: white;
     height: 30rem;
     margin-top: 1rem;
    
@@ -84,7 +84,9 @@ margin-left: 19rem;
     margin-top: 1.5rem;
     background-color: #f85606;
     color: white;
+    border: none;
 }
+
 /* .input-box button a{
     text-decoration: none;
     color: white;
