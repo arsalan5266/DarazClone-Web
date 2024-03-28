@@ -390,22 +390,7 @@ loadMoreBtn.addEventListener('click', loadMoreProducts)
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// carousal
 let slideIndex = 1;
 showSlides(slideIndex);
 
@@ -454,6 +439,8 @@ let slideTimer = setInterval(function() {
 
 document.body.style.overflowX = 'hidden';
 
+
+
 // TIMER
 const hour = document.querySelector(".hour")
 const minute = document.querySelector(".minute")
@@ -476,3 +463,35 @@ function updateTime(){
 updateTime();
 
 setInterval(updateTime,1000);
+
+
+
+
+
+
+// for (let i= 1 ; i <=10 ; i++) {
+//   let table = 2;
+//   console.log(i*table)
+  
+// }
+
+
+// for (let i = 0; i < 5; i++) {
+//    setTimeout(() =>{
+//      console.log(i);
+//    },3000)
+  
+// }
+
+// for (let i = 0; i < 5; i++) {
+//    setInterval(() =>{
+//      console.log(i);
+//    },3000)
+  
+// }
+// let a = 2;
+// for (let i= 1 ; i <=10 ; i++) {
+//   let table = i*a;
+//   console.log(table)
+  
+// }
