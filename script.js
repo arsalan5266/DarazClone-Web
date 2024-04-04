@@ -464,12 +464,6 @@ updateTime();
 
 setInterval(updateTime,1000);
 
-// dropDown
-// function toggleDropdown() {
-//   var dropdownContent = document.getElementById('dropdownContent');
-//   dropdownContent.classList.toggle('show');
-// }
-
 
 
 
