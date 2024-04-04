@@ -464,14 +464,19 @@ updateTime();
 
 setInterval(updateTime,1000);
 
-
+// dropDown
+// function toggleDropdown() {
+//   var dropdownContent = document.getElementById('dropdownContent');
+//   dropdownContent.classList.toggle('show');
+// }
 
 
 
 
 // for (let i= 1 ; i <=10 ; i++) {
-//   let table = 2;
-//   console.log(i*table)
+//   let table = 7;
+//   console.log(`${table} X ${i} = ${table*i}`)
+//   // console.log("2 x 1 = 2");
   
 // }
 
@@ -495,3 +500,58 @@ setInterval(updateTime,1000);
 //   console.log(table)
   
 // }
+
+// setTimeout(() => {
+//   function addition() {
+//     let num1 = 4;
+//     let num2 = 8;
+//     let res = num1+num2;
+//     console.log(res)    
+//   }
+//   addition();
+// }, 2000);
+
+
+function processData(callback) {
+ console.log("processing.."+ callback)
+}
+
+function callback() {
+  processData("welcome")
+}
+callback();
+
+// javascript is single thread language 
+// have callstack for code execution
+// have two mode synchronous and asynchronous
+// settimeout setinterval .then are some example of asynchronous
+
+
+//Using set timeout
+
+// function Person1(callback) {
+//   console.log("I will call you back");
+//   callback(); 
+// }
+
+// function callback() {
+//   setTimeout(() => {
+//     console.log("I am back");
+//   }, 3000);
+// }
+
+// Person1(callback);
+
+
+function Person1(callback) {
+  console.log("I will call you back");
+  // callback(); 
+}
+
+function callback() {
+ 
+    console.log("I am back");
+}
+
+// Person1(callback);
+Person1();
