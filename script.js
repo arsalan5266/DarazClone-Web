@@ -1,42 +1,54 @@
 // FlashSale dynamic
-let data=[
+let data = [
   {
+    "id": 6,
     "image": "https://static-01.daraz.pk/p/a77b8e82a6024336432ec3cba57af459.jpg",
     "description": "product1: Blue color baby dinosaur cloth organizer",
     "price": 300
   },
   {
+    "id": 7,
     "image": "https://static-01.daraz.pk/p/656f50d69333b0c6922bd4f6ba8a6511.jpg",
     "description": "product2: Tws Air pods_pro Earbuds / Environmental Noise",
     "price": 1222
   },
   {
+    "id": 8,
     "image": "https://static-01.daraz.pk/p/3bfaa8be240de0fa89760bc5d30e431a.jpg",
     "description": "product3: Slim Card Holder Wallet Forr men's And boys",
     "price": 1099
   },
   {
+    "id": 9,
     "image": "https://static-01.daraz.pk/p/d6948194f4c13f9b25355d1820ae98e0.jpg",
     "description": "product4: Roshni BINBOND Luxuary Men's Fashion Watch",
     "price": 690
   },
   {
+    "id": 10,
     "image": "https://static-01.daraz.pk/p/b49f35fa6e771d5ae4e0694dea38db7e.jpg",
     "description": "product5: Engrave On A Coustem Ring Make A Ring With Your Nam",
     "price": 3000
   }
 ]
 
-
 const container1 = document.getElementById('data');
 
-data.forEach(item => {
+data.forEach(item=> {
   const productDiv = document.createElement('div');
-  productDiv.classList.add('flashCard');
 
+  productDiv.classList.add('flashCard');
+  const link = document.createElement('a');
+  link.href = `singleProduct.html?id=${item.id}`;
+  productDiv.appendChild(link);
   const img = document.createElement('img');
   img.src = item.image;
   img.alt = "Product Image";
+  img.addEventListener('click', () => {
+    console.log(`Clicked image ID: ${item.id}`);
+    window.location.href = link.href;
+  });
+
   productDiv.appendChild(img);
   const description = document.createElement('p');
   description.classList.add('flashTitle');
@@ -50,6 +62,8 @@ data.forEach(item => {
 
   container1.appendChild(productDiv);
 });
+
+
  
 // Categories dynamic.
 
@@ -117,10 +131,17 @@ const container = document.querySelector('.catCard');
 catCard.forEach(card => {
     const cardContainer = document.createElement('div');
     cardContainer.classList.add('cat-img');
-
+    
+    const link = document.createElement('a');
+    link.href = `singleProduct.html?id=${card.id}`;
+    cardContainer.appendChild(link);
     const img = document.createElement('img');
     img.src = card.image;
     img.alt = card.title;
+    img.addEventListener('click', () => {
+      console.log(`Clicked image ID: ${card.id}`);
+      window.location.href = link.href;
+    });
 
     const title = document.createElement('span');
     title.innerText = card.title;
@@ -342,9 +363,17 @@ justForYou.forEach(item => {
   const productDiv = document.createElement('div');
   productDiv.classList.add('singleProducts');
 
+  const link = document.createElement('a');
+    link.href = `singleProduct.html?id=${item.id}`;
+    productDiv.appendChild(link);
+
   const img = document.createElement('img');
   img.src = item.image;
   img.alt = "Product Image";
+  img.addEventListener('click', () => {
+    console.log(`Clicked image ID: ${item.id}`);
+    window.location.href = link.href;
+  });
   productDiv.appendChild(img);
 
   const description = document.createElement('p');
@@ -537,15 +566,27 @@ callback();
 // Person1(callback);
 
 
-function Person1(callback) {
-  console.log("I will call you back");
-  // callback(); 
-}
+// function Person1(callback) {
+//   console.log("I will call you back");
+//   // callback(); 
+// }
 
-function callback() {
+// function callback() {
  
-    console.log("I am back");
-}
+//     console.log("I am back");
+// }
 
-// Person1(callback);
-Person1();
+// // Person1(callback);
+// Person1();
+
+
+
+
+
+
+
+
+
+
+
+

@@ -8,38 +8,72 @@
     <title>Document</title>
 </head>
 <body>
+   <header>
+      <div class="topNav">
+          <ul>
+              <li><a href="#">Become a seller</a></li>
+              <li><a href="#">daraz affiliate program</a></li>
+              <li><a href="#">help and support</a></li>
+              <li><a href="#">Daraz Logistics partener</a></li>
+          </ul>
+          <div>
+              <button class="btn">Save More on App</button>
+          </div>
+      </div>
+      <nav>
+          <div class="logoDiv">
+              <img src="./images/darazLogo.png" alt="logo" class="darazLogo">
+          </div>
+          <div class="searchbarDiv">
+              <input type="text" class="searchBar" placeholder="Search in Daraz">
+              <div class="searchbtn">
+                  <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+              </div>
+          </div>
+          <div class="rightElements">
+              <a href="login.html" class="loginBtn"><i class="fa-solid fa-user"></i>Login</a>
+              <!-- <span>|</span> -->
+              <a href="signup.html" class="signupBtn">Signup</a>
+              <a href="" class="languagebtn"><i class="fa-solid fa-globe"></i>ENG<i class="fa-solid fa-chevron-down"></i></a>
+              <a href="login.html" class="cartBtn"><i class="fa-solid fa-cart-shopping"></i></a>
+          </div>
+      </nav>
+  </header>
+
   <div class="main-container">
         
-        <div class="categories">
+        <div class="categories" >
            <a href="#">TV,Audio</a>/ 
            <a href="#">Video,Gaming & Wearables</a><i class="fa-solid fa-chevron-right"></i>
            <a href="#">Accessories</a><i class="fa-solid fa-chevron-right"></i>
            <a href="#">others</a><i class="fa-solid fa-chevron-right"></i>
-           <p>A Pair For PUBG Gaming Finger Sleeve Breathable Fingertips Sweatproof Anti-slip Fingertip Cover Thumb Gloves For PUBG</p>
+           <p>Pubg Thumb Gloves - Mobile gaming Finger Sleeve - Best Gaming - Sweat Proof - Non Scratch </p>
         </div>
 
         <!-- main section  -->
         
     <div class="single-product">
-       <div class="leftMain">
-      
-          <div class="zoom">
-          
-            <div class="original">
-              <img src="./images/single-product.webp" id="target">
-            </div>
-          
-            <div class="viewer">
-              <img src="./images/single-product.webp">
-            </div>
-           
-            <div class="magnifier"></div>
-          
-          
+      <div class="leftMain">
+         <div class="zoom">
+             <div class="original">
+                 <img src="./images/single-product.webp" id="target">
+             </div>
+             <div class="viewer">
+                 <img src="./images/single-product.webp">
+             </div>
+             <div class="magnifier"></div>
          </div>
          
-      </div>
-
+         <div class="gallery">
+             <div class="thumbnails">
+                 <img src="./images/pubg.jpg" alt="Image 1" onclick="changeImage('./images/pubg.jpg')">
+                 <img src="./images/pubG2.jpg" alt="Image 2" onclick="changeImage('./images/pubG2.jpg')">
+                 <img src="./images/pubG3.jpg" alt="Image 3" onclick="changeImage('./images/pubG3.jpg')">
+                 <img src="./images/pubG4.jpg" alt="Image 4" onclick="changeImage('./images/pubG4.jpg')">
+             </div>
+         </div>
+     </div>
+     
          <div class="detailsImage">
          <p>A Pair For PUBG Gaming Finger Sleeve Breathable Fingertips Sweatproof Anti-slip Fingertip Cover Thumb Gloves For PUBG Mobile Game.</p>
          <div class="rating">
@@ -65,12 +99,6 @@
              <p>Rs. 30</p>
             <del>Rs. 149</del> <span>-80%</span>
            </div>
-        
-           <div class="dropDown">
-            <p>Promotion</p>
-            
-           </div>
-
            <div class="quantity-selector">
             <p>Quantity</p>
             <button class="minus">-</button>
@@ -79,8 +107,8 @@
           </div>
 
           <div class="button">
-            <a href="#"><button class="buyNowbtn" type="submit">Buy Now</button></a>
-           <a href="#"><button class="addToCartbtn" type="submit">Add to Cart</button></a> 
+            <a href="login.html"><button class="buyNowbtn" type="submit">Buy Now</button></a>
+           <a href="login.html"><button class="addToCartbtn" type="submit">Add to Cart</button></a> 
           </div>
           
             </div>
@@ -104,7 +132,7 @@
                <p class="delivery"><b>Free</b></p>
          </div>
          <div class="freeDiv">
-            <p>Enjoy free shipping promotion with minimum spend of Rs. 599 from <a href="#">INNOVATRIX (KARACHI).</a></p>
+            <p>Enjoy free shipping promotion with minimum spend of Rs. 599 from <a href="#">Fashionatic World</a></p>
          </div>
          <div class="cashDelivery">
             <p>Cash on Delivery Available</p>
@@ -174,9 +202,14 @@
             <img src="./images/pubG4.jpg" alt="pubG4">
             <p class="scrollable">These PUBG Thumb Gloves are the perfect accessory for mobile gamers. Made with high-quality materials, these gloves are sweat-proof and non-scratch, ensuring a smooth and fast touch. The fingertip anti-slip feature allows for a better grip, making it easier to play your favorite games. These gloves are designed to be comfortable and allow for free movement, so you can play for hours without any discomfort. Whether you're a casual gamer or a pro, these gloves are a must-have accessory for anyone who loves mobile gaming.</p>
          </div>
-           
+
          </div>
+
+
            <div class="ratingRight">
+            <div class="rightParagraph">
+               <p><b>People Who Viewed This...</b></p>
+            </div>
                 <div  class="rightProduct">  
                     <img src="	https://static-01.daraz.pk/p/a77b8e82a6024336432ec3cba57af459.jpg" alt="img">
                     <p class="rightProductTitle">Blue color baby dinosaur cloth organizer</p>
@@ -187,20 +220,113 @@
                     <p class="rightProductTitle">Blue color baby dinosaur cloth organizer</p>
                     <p class="rightProductPrice">Rs.300</p>
                 </div>
+                <div class="rightProduct">
+                  <img src="https://static-01.daraz.pk/p/96c8e39603827a931bb31de6e09004dc.jpg_200x200q80-product.jpg_.webp" alt="img">
+                  <p class="rightProductTitle">Glupatone Extreme Strong Whitening Emulsion</p>
+                  <p class="rightProductPrice">Rs.365</p>
+                </div>
+                <div  class="rightProduct">  
+                  <img src="	https://static-01.daraz.pk/p/a77b8e82a6024336432ec3cba57af459.jpg" alt="img">
+                  <p class="rightProductTitle">Blue color baby dinosaur cloth organizer</p>
+                  <p class="rightProductPrice">Rs.300</p>
+              </div> 
+               <div  class="rightProduct">  
+                  <img src="	https://static-01.daraz.pk/p/a77b8e82a6024336432ec3cba57af459.jpg" alt="img">
+                  <p class="rightProductTitle">Blue color baby dinosaur cloth organizer</p>
+                  <p class="rightProductPrice">Rs.300</p>
+              </div>
+              <div class="rightProduct">
+                <img src="https://static-01.daraz.pk/p/96c8e39603827a931bb31de6e09004dc.jpg_200x200q80-product.jpg_.webp" alt="img">
+                <p class="rightProductTitle">Glupatone Extreme Strong Whitening Emulsion</p>
+                <p class="rightProductPrice">Rs.365</p>
+              </div>
+              <div  class="rightProduct">  
+               <img src="	https://static-01.daraz.pk/p/a77b8e82a6024336432ec3cba57af459.jpg" alt="img">
+               <p class="rightProductTitle">Blue color baby dinosaur cloth organizer</p>
+               <p class="rightProductPrice">Rs.300</p>
+           </div> 
+            <div  class="rightProduct">  
+               <img src="	https://static-01.daraz.pk/p/a77b8e82a6024336432ec3cba57af459.jpg" alt="img">
+               <p class="rightProductTitle">Blue color baby dinosaur cloth organizer</p>
+               <p class="rightProductPrice">Rs.300</p>
+           </div>
+           <div class="rightProduct">
+             <img src="https://static-01.daraz.pk/p/96c8e39603827a931bb31de6e09004dc.jpg_200x200q80-product.jpg_.webp" alt="img">
+             <p class="rightProductTitle">Glupatone Extreme Strong Whitening Emulsion</p>
+             <p class="rightProductPrice">Rs.365</p>
+           </div>
+           <div  class="rightProduct">  
+            <img src="	https://static-01.daraz.pk/p/a77b8e82a6024336432ec3cba57af459.jpg" alt="img">
+            <p class="rightProductTitle">Blue color baby dinosaur cloth organizer</p>
+            <p class="rightProductPrice">Rs.300</p>
+        </div> 
+         <div  class="rightProduct">  
+            <img src="	https://static-01.daraz.pk/p/a77b8e82a6024336432ec3cba57af459.jpg" alt="img">
+            <p class="rightProductTitle">Blue color baby dinosaur cloth organizer</p>
+            <p class="rightProductPrice">Rs.300</p>
+        </div>
+        <div class="rightProduct">
+          <img src="https://static-01.daraz.pk/p/96c8e39603827a931bb31de6e09004dc.jpg_200x200q80-product.jpg_.webp" alt="img">
+          <p class="rightProductTitle">Glupatone Extreme Strong Whitening Emulsion</p>
+          <p class="rightProductPrice">Rs.365</p>
+        </div>
+        <div  class="rightProduct">  
+         <img src="	https://static-01.daraz.pk/p/a77b8e82a6024336432ec3cba57af459.jpg" alt="img">
+         <p class="rightProductTitle">Blue color baby dinosaur cloth organizer</p>
+         <p class="rightProductPrice">Rs.300</p>
+     </div> 
+      <div  class="rightProduct">  
+         <img src="	https://static-01.daraz.pk/p/a77b8e82a6024336432ec3cba57af459.jpg" alt="img">
+         <p class="rightProductTitle">Blue color baby dinosaur cloth organizer</p>
+         <p class="rightProductPrice">Rs.300</p>
+     </div>
+     <div class="rightProduct">
+       <img src="https://static-01.daraz.pk/p/96c8e39603827a931bb31de6e09004dc.jpg_200x200q80-product.jpg_.webp" alt="img">
+       <p class="rightProductTitle">Glupatone Extreme Strong Whitening Emulsion</p>
+       <p class="rightProductPrice">Rs.365</p>
+     </div>
+     <div  class="rightProduct">  
+      <img src="	https://static-01.daraz.pk/p/a77b8e82a6024336432ec3cba57af459.jpg" alt="img">
+      <p class="rightProductTitle">Blue color baby dinosaur cloth organizer</p>
+      <p class="rightProductPrice">Rs.300</p>
+  </div> 
+   <div  class="rightProduct">  
+      <img src="	https://static-01.daraz.pk/p/a77b8e82a6024336432ec3cba57af459.jpg" alt="img">
+      <p class="rightProductTitle">Blue color baby dinosaur cloth organizer</p>
+      <p class="rightProductPrice">Rs.300</p>
+  </div>
+  <div class="rightProduct">
+    <img src="https://static-01.daraz.pk/p/96c8e39603827a931bb31de6e09004dc.jpg_200x200q80-product.jpg_.webp" alt="img">
+    <p class="rightProductTitle">Glupatone Extreme Strong Whitening Emulsion</p>
+    <p class="rightProductPrice">Rs.365</p>
+  </div>
+             
            </div>
        </div>
 
    </div>
 
+
    <script src="https://cdn-script.com/ajax/libs/jquery/3.7.1/jquery.js"></script>
    <script src="zoom.js"></script>
    <script>
+
+// SingleProduct page start
+
+   //  Magnefier 
     var x  = $('#target').zoom(5);
     x.setZoom(2);
-     
+
+   //  gallery Section 
+   function changeImage(newSrc) {
+    var originalImage = document.getElementById('target');
+    var viewerImage = document.querySelector('.zoom .viewer img');
+    originalImage.src = newSrc;
+    viewerImage.src = newSrc;
+}
     
-// SingleProduct page start
- 
+
+//  Quantity Selector 
 const plus = document.querySelector(".plus"),
       minus = document.querySelector(".minus"),
       num = document.querySelector(".num");
@@ -223,6 +349,7 @@ minus.addEventListener("click", () => {
   }
   num.innerText = a;
 });
+
 
    </script>
    
