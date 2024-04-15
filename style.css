@@ -729,6 +729,7 @@ main{
     justify-content: center;
     align-items: center;
     text-decoration: none;
+    color: #000;
 
 }
 .imagess a img{
@@ -870,7 +871,7 @@ main{
      .singleproduct-price {
        font-weight: bold;
        color: var(--primary-color);
-       margin-left: -9rem;
+       /* margin-left: -9rem; */
      }
     
     

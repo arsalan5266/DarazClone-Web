@@ -56,7 +56,7 @@
       <div class="leftMain">
          <div class="zoom">
              <div class="original">
-                 <img src="./images/single-product.webp" id="target">
+                 <img id="target">
              </div>
              <div class="viewer">
                  <img src="./images/single-product.webp">
@@ -317,14 +317,7 @@
     var x  = $('#target').zoom(5);
     x.setZoom(2);
 
-   //  gallery Section 
-   function changeImage(newSrc) {
-    var originalImage = document.getElementById('target');
-    var viewerImage = document.querySelector('.zoom .viewer img');
-    originalImage.src = newSrc;
-    viewerImage.src = newSrc;
-}
-    
+
 
 //  Quantity Selector 
 const plus = document.querySelector(".plus"),
@@ -349,6 +342,39 @@ minus.addEventListener("click", () => {
   }
   num.innerText = a;
 });
+
+
+
+
+const product = {
+    id: sessionStorage.getItem('clickedItemId'),
+    image: sessionStorage.getItem('clickedItemImage'),
+    description: sessionStorage.getItem('clickedItemDescription'),
+    price: parseInt(sessionStorage.getItem('clickedItemPrice'))
+};
+console.log(product);
+
+if (product) {
+    const originalImage = document.querySelector('.original img');
+    const viewerImage = document.querySelector('.zoom .viewer img');
+    originalImage.src = product.image;
+    viewerImage.src = product.image;
+
+    const descriptionElement = document.querySelector('.detailsImage p');
+    descriptionElement.textContent = product.description;
+
+    const priceElement = document.querySelector('.price p');
+    priceElement.textContent = 'Rs. ' + product.price;
+}
+
+   //  gallery Section 
+   function changeImage(newSrc) {
+    var originalImage = document.getElementById('target');
+    var viewerImage = document.querySelector('.zoom .viewer img');
+    originalImage.src = newSrc;
+    viewerImage.src = newSrc;
+}
+    
 
 
    </script>
