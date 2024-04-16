@@ -3,31 +3,31 @@ let data = [
   {
     "id": 6,
     "image": "https://static-01.daraz.pk/p/a77b8e82a6024336432ec3cba57af459.jpg",
-    "description": "Blue color baby dinosaur cloth organizer",
+    "description": "product1: Blue color baby dinosaur cloth organizer",
     "price": 300
   },
   {
     "id": 7,
     "image": "https://static-01.daraz.pk/p/656f50d69333b0c6922bd4f6ba8a6511.jpg",
-    "description": " Tws Air pods_pro Earbuds / Environmental Noise",
+    "description": "product2: Tws Air pods_pro Earbuds / Environmental Noise",
     "price": 1222
   },
   {
     "id": 8,
     "image": "https://static-01.daraz.pk/p/3bfaa8be240de0fa89760bc5d30e431a.jpg",
-    "description": " Slim Card Holder Wallet Forr men's And boys",
+    "description": "product3: Slim Card Holder Wallet Forr men's And boys",
     "price": 1099
   },
   {
     "id": 9,
     "image": "https://static-01.daraz.pk/p/d6948194f4c13f9b25355d1820ae98e0.jpg",
-    "description": "Roshni BINBOND Luxuary Men's Fashion Watch",
+    "description": "product4: Roshni BINBOND Luxuary Men's Fashion Watch",
     "price": 690
   },
   {
     "id": 10,
     "image": "https://static-01.daraz.pk/p/b49f35fa6e771d5ae4e0694dea38db7e.jpg",
-    "description": "Engrave On A Coustem Ring Make A Ring With Your Nam",
+    "description": "product5: Engrave On A Coustem Ring Make A Ring With Your Nam",
     "price": 3000
   }
 ]
@@ -46,13 +46,9 @@ const container1 = document.getElementById('data');
             img.src = item.image;
             img.alt = "Product Image";
             img.addEventListener('click', () => {
-              sessionStorage.setItem('clickedItemId', item.id);
-              sessionStorage.setItem('clickedItemImage', item.image);
-              sessionStorage.setItem('clickedItemDescription', item.description);
-              sessionStorage.setItem('clickedItemPrice', item.price);
-              window.location.href = link.href;
-          });
-          
+                sessionStorage.setItem('clickedItemId', item.id);
+                window.location.href = link.href;
+            });
 
             productDiv.appendChild(img);
 
@@ -379,10 +375,7 @@ justForYou.forEach(item => {
   img.src = item.image;
   img.alt = "Product Image";
   img.addEventListener('click', () => {
-    sessionStorage.setItem('clickedItemId', item.id);
-    sessionStorage.setItem('clickedItemImage', item.image);
-    sessionStorage.setItem('clickedItemDescription', item.description);
-    sessionStorage.setItem('clickedItemPrice', item.price);
+    
     window.location.href = link.href;
   });
   productDiv.appendChild(img);
