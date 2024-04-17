@@ -7,28 +7,28 @@ let data = [
     "price": 300
   },
   {
-    "id": 7,
+    "id":7,
     "image": "https://static-01.daraz.pk/p/656f50d69333b0c6922bd4f6ba8a6511.jpg",
     "description": "product2: Tws Air pods_pro Earbuds / Environmental Noise",
     "price": 1222
   },
   {
-    "id": 8,
+    "id":8,
     "image": "https://static-01.daraz.pk/p/3bfaa8be240de0fa89760bc5d30e431a.jpg",
     "description": "product3: Slim Card Holder Wallet Forr men's And boys",
     "price": 1099
   },
   {
-    "id": 9,
-    "image": "https://static-01.daraz.pk/p/d6948194f4c13f9b25355d1820ae98e0.jpg",
+    "id":9,
+    "image":"https://static-01.daraz.pk/p/d6948194f4c13f9b25355d1820ae98e0.jpg",
     "description": "product4: Roshni BINBOND Luxuary Men's Fashion Watch",
     "price": 690
   },
   {
-    "id": 10,
-    "image": "https://static-01.daraz.pk/p/b49f35fa6e771d5ae4e0694dea38db7e.jpg",
-    "description": "product5: Engrave On A Coustem Ring Make A Ring With Your Nam",
-    "price": 3000
+    "id":10,
+    "image":"https://static-01.daraz.pk/p/b49f35fa6e771d5ae4e0694dea38db7e.jpg",
+    "description":"product5: Engrave On A Coustem Ring Make A Ring With Your Nam",
+    "price":3000
   }
 ]
 
@@ -46,12 +46,11 @@ const container1 = document.getElementById('data');
             img.src = item.image;
             img.alt = "Product Image";
             img.addEventListener('click', () => {
-                sessionStorage.setItem('clickedItemId', item.id);
-                window.location.href = link.href;
+              sessionStorage.setItem('clickedItemId', item.id);
+              window.location.href = link.href;
             });
 
             productDiv.appendChild(img);
-
             const description = document.createElement('p');
             description.classList.add('flashTitle');
             description.textContent = item.description;
@@ -159,201 +158,240 @@ catCard.forEach(card => {
 // Just For You dynamic
 let justForYou = [
   {
+    "id" : 1,
     "image": "https://static-01.daraz.pk/p/a5fe0bee2cbe920603ebcf2a0b9d8367.jpg_200x200q80-product.jpg_.webp",
     "description": "M10 Wireless Headphone Earbuds Touch Control",
     "price": 897
   },
   {
+    "id" : 2,
     "image": "https://static-01.daraz.pk/p/78a15be7001c4c783ed9dbbad8773030.jpg_200x200q80-product.jpg_.webp",
     "description": "Professional Vintage Dragon Style Trimmer",
     "price": 743
   },
   {
+    "id" : 3,
     "image": "https://static-01.daraz.pk/p/63d0a865a74e7142b5734c96dea3bc74.jpg_200x200q80-product.jpg_.webp",
     "description": "T900 Ultra Smart Watch / T900 Ultra 2 SmartWatch",
     "price": 1799
   },
   {
+    "id" : 4,
     "image": "https://static-01.daraz.pk/p/96c8e39603827a931bb31de6e09004dc.jpg_200x200q80-product.jpg_.webp",
     "description": "Glupatone Extreme Strong Whitening Emulsion",
     "price": 365
   },
   {
+    "id" : 5,
     "image": "https://static-01.daraz.pk/p/f27b77bd33e0ae78361fae76a7059230.jpg_200x200q80-product.jpg_.webp",
     "description": "Original Flawless Facial Hair Remover Machine",
     "price": 455
   },
   {
+    "id" : 6,
     "image": "https://static-01.daraz.pk/p/a3d786a84cb8dae43d821569060a0231.jpg_200x200q80-product.jpg_.webp",
     "description": "Audionic Airbud 425 Quad Mic, ENC Wireless Earbud",
     "price": 3999
   },
   {
+    "id" : 7,
     "image": "https://static-01.daraz.pk/p/a5fe0bee2cbe920603ebcf2a0b9d8367.jpg_200x200q80-product.jpg_.webp",
     "description": "product7: M10 Wireless Headphone Earbuds Touch Control",
     "price": 897
   },
   {
+    "id" : 8,
     "image": "https://static-01.daraz.pk/p/78a15be7001c4c783ed9dbbad8773030.jpg_200x200q80-product.jpg_.webp",
     "description": "product8: Professional Vintage Dragon Style Trimmer",
     "price": 743
   },
   {
+    "id" : 9,
     "image": "https://static-01.daraz.pk/p/63d0a865a74e7142b5734c96dea3bc74.jpg_200x200q80-product.jpg_.webp",
     "description": "product9: T900 Ultra Smart Watch / T900 Ultra 2 SmartWatch",
     "price": 1799
   },
   {
+    "id" : 10,
     "image": "https://static-01.daraz.pk/p/96c8e39603827a931bb31de6e09004dc.jpg_200x200q80-product.jpg_.webp",
     "description": "product10: Glupatone Extreme Strong Whitening Emulsion",
     "price": 365
   },
   {
+    "id" : 11,
     "image": "https://static-01.daraz.pk/p/a5fe0bee2cbe920603ebcf2a0b9d8367.jpg_200x200q80-product.jpg_.webp",
     "description": "M10 Wireless Headphone Earbuds Touch Control",
     "price": 897
   },
   {
+    "id" : 12,
     "image": "https://static-01.daraz.pk/p/78a15be7001c4c783ed9dbbad8773030.jpg_200x200q80-product.jpg_.webp",
     "description": "Professional Vintage Dragon Style Trimmer",
     "price": 743
   },
   {
+    "id" : 13,
     "image": "https://static-01.daraz.pk/p/63d0a865a74e7142b5734c96dea3bc74.jpg_200x200q80-product.jpg_.webp",
     "description": "T900 Ultra Smart Watch / T900 Ultra 2 SmartWatch",
     "price": 1799
   },
   {
+    "id" : 14,
     "image": "https://static-01.daraz.pk/p/96c8e39603827a931bb31de6e09004dc.jpg_200x200q80-product.jpg_.webp",
     "description": "Glupatone Extreme Strong Whitening Emulsion",
     "price": 365
   },
   {
+    "id" : 15,
     "image": "https://static-01.daraz.pk/p/f27b77bd33e0ae78361fae76a7059230.jpg_200x200q80-product.jpg_.webp",
     "description": "Original Flawless Facial Hair Remover Machine",
     "price": 455
   },
   {
+    "id" : 16,
     "image": "https://static-01.daraz.pk/p/a3d786a84cb8dae43d821569060a0231.jpg_200x200q80-product.jpg_.webp",
     "description": "Audionic Airbud 425 Quad Mic, ENC Wireless Earbud",
     "price": 3999
   },
   {
+    "id" : 17,
     "image": "https://static-01.daraz.pk/p/a5fe0bee2cbe920603ebcf2a0b9d8367.jpg_200x200q80-product.jpg_.webp",
     "description": "product7: M10 Wireless Headphone Earbuds Touch Control",
     "price": 897
   },
   {
+    "id" : 18,
     "image": "https://static-01.daraz.pk/p/78a15be7001c4c783ed9dbbad8773030.jpg_200x200q80-product.jpg_.webp",
     "description": "product8: Professional Vintage Dragon Style Trimmer",
     "price": 743
   },
   {
+    "id" : 19,
     "image": "https://static-01.daraz.pk/p/63d0a865a74e7142b5734c96dea3bc74.jpg_200x200q80-product.jpg_.webp",
     "description": "product9: T900 Ultra Smart Watch / T900 Ultra 2 SmartWatch",
     "price": 1799
   },
   {
+    "id" : 20,
     "image": "https://static-01.daraz.pk/p/96c8e39603827a931bb31de6e09004dc.jpg_200x200q80-product.jpg_.webp",
     "description": "product10: Glupatone Extreme Strong Whitening Emulsion",
     "price": 365
   },
   {
+    "id" : 21,
     "image": "https://static-01.daraz.pk/p/a5fe0bee2cbe920603ebcf2a0b9d8367.jpg_200x200q80-product.jpg_.webp",
     "description": "M10 Wireless Headphone Earbuds Touch Control",
     "price": 897
   },
   {
+    "id" : 22,
     "image": "https://static-01.daraz.pk/p/78a15be7001c4c783ed9dbbad8773030.jpg_200x200q80-product.jpg_.webp",
     "description": "Professional Vintage Dragon Style Trimmer",
     "price": 743
   },
   {
+    "id" : 23,
     "image": "https://static-01.daraz.pk/p/63d0a865a74e7142b5734c96dea3bc74.jpg_200x200q80-product.jpg_.webp",
     "description": "T900 Ultra Smart Watch / T900 Ultra 2 SmartWatch",
     "price": 1799
   },
   {
+    "id" : 24,
     "image": "https://static-01.daraz.pk/p/96c8e39603827a931bb31de6e09004dc.jpg_200x200q80-product.jpg_.webp",
     "description": "Glupatone Extreme Strong Whitening Emulsion",
     "price": 365
   },
   {
+    "id" : 25,
     "image": "https://static-01.daraz.pk/p/f27b77bd33e0ae78361fae76a7059230.jpg_200x200q80-product.jpg_.webp",
     "description": "Original Flawless Facial Hair Remover Machine",
     "price": 455
   },
   {
+    "id" : 26,
     "image": "https://static-01.daraz.pk/p/a3d786a84cb8dae43d821569060a0231.jpg_200x200q80-product.jpg_.webp",
     "description": "Audionic Airbud 425 Quad Mic, ENC Wireless Earbud",
     "price": 3999
   },
   {
+    "id" : 27,
     "image": "https://static-01.daraz.pk/p/a5fe0bee2cbe920603ebcf2a0b9d8367.jpg_200x200q80-product.jpg_.webp",
     "description": "product7: M10 Wireless Headphone Earbuds Touch Control",
     "price": 897
   },
   {
+    "id" : 28,
     "image": "https://static-01.daraz.pk/p/78a15be7001c4c783ed9dbbad8773030.jpg_200x200q80-product.jpg_.webp",
     "description": "product8: Professional Vintage Dragon Style Trimmer",
     "price": 743
   },
   {
+    "id" : 29,
     "image": "https://static-01.daraz.pk/p/63d0a865a74e7142b5734c96dea3bc74.jpg_200x200q80-product.jpg_.webp",
     "description": "product9: T900 Ultra Smart Watch / T900 Ultra 2 SmartWatch",
     "price": 1799
   },
   {
+    "id" : 30,
     "image": "https://static-01.daraz.pk/p/96c8e39603827a931bb31de6e09004dc.jpg_200x200q80-product.jpg_.webp",
     "description": "product10: Glupatone Extreme Strong Whitening Emulsion",
     "price": 365
   },
   {
+    "id" : 31,
     "image": "https://static-01.daraz.pk/p/a5fe0bee2cbe920603ebcf2a0b9d8367.jpg_200x200q80-product.jpg_.webp",
     "description": "M10 Wireless Headphone Earbuds Touch Control",
     "price": 897
   },
   {
+    "id" : 32,
     "image": "https://static-01.daraz.pk/p/78a15be7001c4c783ed9dbbad8773030.jpg_200x200q80-product.jpg_.webp",
     "description": "Professional Vintage Dragon Style Trimmer",
     "price": 743
   },
   {
+    "id" : 33,
     "image": "https://static-01.daraz.pk/p/63d0a865a74e7142b5734c96dea3bc74.jpg_200x200q80-product.jpg_.webp",
     "description": "T900 Ultra Smart Watch / T900 Ultra 2 SmartWatch",
     "price": 1799
   },
   {
+    "id" : 34,
     "image": "https://static-01.daraz.pk/p/96c8e39603827a931bb31de6e09004dc.jpg_200x200q80-product.jpg_.webp",
     "description": "Glupatone Extreme Strong Whitening Emulsion",
     "price": 365
   },
   {
+    "id" : 35,
     "image": "https://static-01.daraz.pk/p/f27b77bd33e0ae78361fae76a7059230.jpg_200x200q80-product.jpg_.webp",
     "description": "Original Flawless Facial Hair Remover Machine",
     "price": 455
   },
   {
+    "id" : 36,
     "image": "https://static-01.daraz.pk/p/a3d786a84cb8dae43d821569060a0231.jpg_200x200q80-product.jpg_.webp",
     "description": "Audionic Airbud 425 Quad Mic, ENC Wireless Earbud",
     "price": 3999
   },
   {
+    "id" : 37,
     "image": "https://static-01.daraz.pk/p/a5fe0bee2cbe920603ebcf2a0b9d8367.jpg_200x200q80-product.jpg_.webp",
     "description": "product7: M10 Wireless Headphone Earbuds Touch Control",
     "price": 897
   },
   {
+    "id" : 38,
     "image": "https://static-01.daraz.pk/p/78a15be7001c4c783ed9dbbad8773030.jpg_200x200q80-product.jpg_.webp",
     "description": "product8: Professional Vintage Dragon Style Trimmer",
     "price": 743
   },
-  {
+  {"id" : 39,
     "image": "https://static-01.daraz.pk/p/63d0a865a74e7142b5734c96dea3bc74.jpg_200x200q80-product.jpg_.webp",
     "description": "product9: T900 Ultra Smart Watch / T900 Ultra 2 SmartWatch",
     "price": 1799
   },
   {
+    "id" : 40,
     "image": "https://static-01.daraz.pk/p/96c8e39603827a931bb31de6e09004dc.jpg_200x200q80-product.jpg_.webp",
     "description": "product10: Glupatone Extreme Strong Whitening Emulsion",
     "price": 365
@@ -375,7 +413,7 @@ justForYou.forEach(item => {
   img.src = item.image;
   img.alt = "Product Image";
   img.addEventListener('click', () => {
-    
+    sessionStorage.setItem('clickedItemId', item.id);
     window.location.href = link.href;
   });
   productDiv.appendChild(img);
@@ -539,14 +577,14 @@ setInterval(updateTime,1000);
 // }, 2000);
 
 
-function processData(callback) {
- console.log("processing.."+ callback)
-}
+// function processData(callback) {
+//  console.log("processing.."+ callback)
+// }
 
-function callback() {
-  processData("welcome")
-}
-callback();
+// function callback() {
+//   processData("welcome")
+// }
+// callback();
 
 // javascript is single thread language 
 // have callstack for code execution
